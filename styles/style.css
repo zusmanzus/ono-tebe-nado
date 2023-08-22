@@ -1,28 +1,43 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: Raleway, sans-serif, Arial;
   font-weight: 400;
+  font-size: 20px;
   background-color: #fff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-blockquote {
-  margin: 0;
-  padding: 0;
+a {
+  text-decoration: none;
 }
 
 .section {
   box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1440px;
   margin: auto;
+}
+
+.nav_links {
+  font-size: 18px;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 92px 49px 92px 51px;
+}
+
+.header_logo {
+  display: block;
+  width: 148px;
+}
+
+.header_image {
+  width: 100%;
+}
+
+.header_links {
+  flex-direction: row;
+  gap: 26px;
 }
