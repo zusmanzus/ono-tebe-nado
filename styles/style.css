@@ -1,1 +1,27 @@
-/* место для вашего кода */
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif, Arial;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
