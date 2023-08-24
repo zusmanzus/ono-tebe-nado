@@ -3,6 +3,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -40,4 +42,57 @@ a {
 .header_links {
   flex-direction: row;
   gap: 26px;
+}
+
+.art {
+  min-height: 757px;
+  padding: 165px 50px 62px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.art_title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  padding-bottom: 147px;
+}
+
+.art_span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+  margin-right: -30px; /* для того, чтобы убрать лишний отступ от правого края */
+}
+
+.art_description_button {
+  display: flex;
+}
+
+.art_description {
+  margin: auto;
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.art_button {
+  color: #fff;
+  border: 1px #fff solid;
+  background: transparent;
+  padding: 12px 32px;
+  font-size: 22px;
+  text-transform: uppercase;
 }
