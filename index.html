@@ -13,9 +13,9 @@
     <header class="header section">
       <nav class="header_menu">
         <ul class="header_links nav_links">
-          <li>главная</li>
-          <li>посмотреть лоты</li>
-          <li>об аукционе</li>
+          <li><a class="link-active" href="/">главная</a></li>
+          <li><a href="/">посмотреть лоты</a></li>
+          <li><a href="/">об аукционе</a></li>
         </ul>
       </nav>
       <a href="/" class="header_logo">
@@ -35,53 +35,55 @@
       </ul>
     </header>
     <main class="content">
-      <section class="art section">
-        <h1 class="art_title">
-          <span class="art_span">оно</span>
-          <span class="art_span text-center">тебе</span>
-          <span class="art_span text-right">надо</span>
+      <div class="overlay">
+      <section class="cover">
+        <h1 class="cover_title">
+          <span class="cover_span">оно</span>
+          <span class="cover_span text-center">тебе</span>
+          <span class="cover_span text-right">надо</span>
         </h1>
-        <div class="art_description_button">
-          <p class="art_description">Аукцион    вещей,    в    которые    никто    не     верил</p>
-          <button class="art_button" type="button">Сделать ставку</button>
+        <div class="cover_description_button">
+          <p class="cover_description">Аукцион    вещей,    в    которые    никто    не     верил</p>
+          <button class="cover_button" type="button">Сделать ставку</button>
         </div>
       </section>
+    </div>
       <section class="lots section light_section">
-        <h2 class="lots_title">Лоты</h2>
+        <h2 class="lots_title section-title">Лоты</h2>
         <ul class="lots_list">
           <li>
-            <div class="lots_card">
+            <div class="lots_card lots_first_card">
               <h3 class="lots_card-title">Фильм режиссёра, который  бросил киношколу</h3>
               <p class="lots_card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
             </div>
           </li>
           <li>
-            <div class="lots_card">
+            <div class="lots_card lots_second_card">
               <h3 class="lots_card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
               <p class="lots_card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
             </div>
           </li>
           <li>
-            <div class="lots_card">
+            <div class="lots_card lots_third_card">
               <h3 class="lots_card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class="lots_card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
             </div>
           </li>
         </ul>
-        <button class="lots_button">посмотреть больше</button>
+        <p class="lots_look_more"><a class="lots_link" href="/">посмотреть больше</a></p>
       </section>
       <section class="about section light_section">
         <div class="logo_circle">
           <img
             src="/images/logo-white.svg"
             alt="Оно тебе надо"
-            class=""
+            class="logo_image"
             >
         </div>
         <div class="about_description">
-          <h3 class="about_title">
+          <h2 class="about_title section-title">
             Об аукционе
-          </h3>
+          </h2>
           <p class="about_paragraph">
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
