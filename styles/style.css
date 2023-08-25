@@ -164,21 +164,21 @@ body {
 }
 
 .lots_first_card {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
 }
 
 .lots_second_card {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
 }
 
 .lots_third_card {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
