@@ -65,16 +65,8 @@ body {
   margin-left: 190px;
 }
 
-/* .overlay {
-  position: relative;
-  z-index: -10;
-  background-color: #000;
-  filter: brightness(80%);
-}*/
-
 .cover {
-  min-height: 757px;
-  padding: 165px 50px 62px 50px;
+  padding: 165px 145px 50px 145px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -83,14 +75,22 @@ body {
   position: sticky;
 }
 
+/* .overlay {
+  position: relative;
+  z-index: -10;
+  background-color: #000;
+  filter: brightness(80%);
+}*/
+
 .cover_title {
   color: #fff;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 30px;
   text-transform: uppercase;
-  padding-bottom: 147px;
+  padding-bottom: 125px;
   z-index: 10;
+  line-height: 1.22;
 }
 
 .cover_span {
@@ -98,26 +98,51 @@ body {
   z-index: 10;
 }
 
+.text-left {
+  display: flex;
+}
+
+.cover_span-first-line {
+  letter-spacing: 60px;
+}
+
 .text-center {
-  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cover_span-second-line {
+  letter-spacing: 60px;
 }
 
 .text-right {
-  text-align: right;
-  margin-right: -30px; /* для того, чтобы убрать лишний отступ от правого края */
+  display: flex;
+  justify-content: end;
+  margin-right: -30px;
+}
+
+.cover_span-third-line-n {
+  letter-spacing: 60px;
+}
+
+.cover_span-third-line-ad {
+  letter-spacing: 30px;
 }
 
 .cover_description_button {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cover_description {
-  margin: auto;
+  margin-left: auto;
+  margin-right: 80px;
   color: #fff;
   font-size: 22px;
-  line-height: 28px;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  /* letter-spacing: 2px; */
+  word-spacing: 18px;
 }
 
 .cover_button {
