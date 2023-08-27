@@ -62,6 +62,9 @@ body {
   font-size: 18px;
   grid-column-start: 5;
   grid-column-end: -1;
+}
+
+.header .contacts {
   margin-left: 190px;
 }
 
@@ -75,12 +78,19 @@ body {
   position: sticky;
 }
 
-/* .overlay {
-  position: relative;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: -10;
-  background-color: #000;
-  filter: brightness(80%);
-}*/
+  opacity: 0.6;
+  background: #000;
+}
+
+.cover .overlay {
+  height: 757px;
+}
 
 .cover_title {
   color: #fff;
@@ -141,7 +151,6 @@ body {
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
-  /* letter-spacing: 2px; */
   word-spacing: 18px;
 }
 
@@ -172,18 +181,26 @@ body {
 
 .lots_list {
   display: flex;
-  justify-content: space-evenly;
+  gap: 25px;
+  justify-content: center;
   list-style: none;
   margin-bottom: 30px;
 }
 
 .lots_card {
+  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 40px 50px 40px;
+  padding: 50px 40px 50px 40px;
   width: 430px;
   height: 450px;
+}
+
+.lots_card_element .overlay {
+  position: absolute;
+  height: 450px;
+  width: 430px;
 }
 
 .lots_card-title {
@@ -193,12 +210,14 @@ body {
   line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 .lots_card-text {
   color: #fff;
   font-size: 20px;
   line-height: 1.2;
+  z-index: 10;
 }
 
 .lots_first_card {
@@ -206,6 +225,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  position: sticky;
 }
 
 .lots_second_card {
@@ -213,6 +233,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  position: sticky;
 }
 
 .lots_third_card {
@@ -220,10 +241,11 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  position: sticky;
 }
 
 .lots_look_more {
-  margin-left: 40px;
+  margin-left: 90px;
 }
 
 .about {
@@ -231,6 +253,7 @@ body {
   padding-bottom: 180px;
   display: grid;
   grid-template-columns: 430px auto;
+  padding-left: 50px;
 }
 
 .logo_container {
@@ -256,6 +279,7 @@ body {
 
 .about_description {
   margin-top: 100px;
+  padding-left: 20px;;
 }
 
 .about_title {
@@ -272,15 +296,21 @@ body {
   align-items: start;
 }
 
+.footer .contacts {
+  margin-left: 50px;
+}
+
 .footer_links {
   flex-direction: column;
   list-style: none;
+  align-items: center;
 }
 
 .footer_social {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 50px;
+  margin-right: 50px;
 }
 
 .footer_social-logo {
