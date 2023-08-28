@@ -14,8 +14,8 @@
       <nav class="header_menu">
         <ul class="header_links nav_links">
           <li><a class="link-active" href="/">главная</a></li>
-          <li><a href="/">посмотреть лоты</a></li>
-          <li><a href="/">об аукционе</a></li>
+          <li class="link-not-active"><a href="/">посмотреть лоты</a></li>
+          <li class="link-not-active"><a href="/">об аукционе</a></li>
         </ul>
       </nav>
       <div class="header_logo-container">
@@ -35,7 +35,7 @@
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
         <li class="contacts-element">
-          наб. Принсенграхт 263-265,<br />Амстердам
+          наб. Принсенграхт 263-265, Амстердам
         </li>
       </ul>
     </header>
@@ -45,16 +45,16 @@
         <h1 class="cover_title">
           <span class="cover_span text-left"
             >о
-            <span class="cover_span cover_span-first-line">но</span>
+            <span class="cover_span cover_span-top-line">но</span>
           </span>
           <span class="cover_span text-center"
             >те
-            <span class="cover_span cover_span-second-line">бе</span>
+            <span class="cover_span cover_span-middle-line">бе</span>
           </span>
           <span class="cover_span text-right">
-            <span class="cover_span cover_span-third-line-n">н</span>
-            <span class="cover_span cover_span-third-line-ad">ад</span>
-            <span class="cover_span cover_span-third-line-o">о</span>
+            <span class="cover_span cover_span-bottom-line-start">н</span>
+            <span class="cover_span cover_span-bottom-line-center">ад</span>
+            <span class="cover_span cover_span-bottom-line-end">о</span>
           </span>
         </h1>
         <div class="cover_description_button">
@@ -67,8 +67,10 @@
       <section class="lots section light_section">
         <h2 class="lots_title section-title">Лоты</h2>
         <ul class="lots_list">
+          <div class="lots_card lots_start_card">
+          <a href="/" class="lots_card_link">
           <li class="lots_card_element">
-            <div class="lots_card lots_first_card">
+
               <div class="overlay"></div>
               <h3 class="lots_card-title">
                 Фильм режиссёра, который бросил киношколу
@@ -77,10 +79,13 @@
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
-            </div>
+
           </li>
+          </a>
+        </div>
+        <div class="lots_card lots_middle_card">
+          <a href="/" class="lots_card_link">
           <li class="lots_card_element">
-            <div class="lots_card lots_second_card">
               <div class="overlay"></div>
               <h3 class="lots_card-title">
                 Книга, где описан один скучный день из жизни рекламного агента
@@ -93,10 +98,12 @@
                 поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                 Джойса?
               </p>
-            </div>
           </li>
+        </a>
+      </div>
+      <div class="lots_card lots_end_card">
+          <a href="/" class="lots_card_link">
           <li class="lots_card_element">
-            <div class="lots_card lots_third_card">
               <div class="overlay"></div>
               <h3 class="lots_card-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
@@ -107,8 +114,10 @@
                 котиков… Сколько бы вы на такое поставили, если бы не знали, что
                 это — одна из революционных работ Кандинского?
               </p>
-            </div>
+
           </li>
+        </a>
+      </div>
         </ul>
         <p class="lots_look_more">
           <a class="lots_link" href="/">посмотреть больше</a>
@@ -126,7 +135,7 @@
         </div>
         <div class="about_description">
           <h2 class="about_title section-title">Об аукционе</h2>
-          <p class="about_paragraph about_paragraph-first">
+          <p class="about_paragraph about_paragraph-start">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
@@ -153,7 +162,7 @@
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
         <li class="contacts-element">
-          наб. Принсенграхт 263-265,<br />Амстердам
+          наб. Принсенграхт 263-265, Амстердам
         </li>
       </ul>
       <nav class="footer_menu">
@@ -166,12 +175,18 @@
       <ul class="footer_social">
         <li>
           <a href="#">
-            <img src="./images/yt.svg" alt="YooTube" class="footer_social-logo" />
+            <img
+              src="./images/yt.svg"
+              alt="YooTube"
+              class="footer_social-logo" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="./images/vk.svg" alt="VK" class="footer_social-logo" />
+            <img
+              src="./images/vk.svg"
+              alt="VK"
+              class="footer_social-logo" />
           </a>
         </li>
         <li>
