@@ -15,8 +15,7 @@
 
 .header_menu {
   grid-column-start: 1;
-  grid-column-end: 3;
-  padding-left: 50px;
+  min-width: max-content;
 }
 
 .nav_links {
