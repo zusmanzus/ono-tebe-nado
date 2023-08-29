@@ -202,13 +202,10 @@
   justify-content: space-between;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-}
-
-.lots_card_element {
   max-width: 430px;
   min-height: 450px;
   padding: 50px 40px 50px 40px;
+  background-size: cover;
 }
 
 .lots_card-title {
