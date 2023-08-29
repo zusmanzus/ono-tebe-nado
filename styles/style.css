@@ -16,6 +16,7 @@
 .header_menu {
   grid-column-start: 1;
   min-width: max-content;
+  padding-left: 50px;
 }
 
 .nav_links {
@@ -67,7 +68,7 @@
 }
 
 .cover {
-  padding: 165px 145px 50px 145px;
+  padding: 165px 70px 50px 60px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
