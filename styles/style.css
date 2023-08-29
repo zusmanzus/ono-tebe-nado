@@ -97,7 +97,7 @@
   color: #fff;
   font-weight: 700;
   font-size: 100px;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   padding-bottom: 125px;
   z-index: 10;
@@ -114,7 +114,7 @@
 }
 
 .cover_span-top-line {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .text-center {
@@ -123,7 +123,7 @@
 }
 
 .cover_span-middle-line {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .text-right {
@@ -133,11 +133,11 @@
 }
 
 .cover_span-bottom-line-start {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .cover_span-bottom-line-center {
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
 }
 
 .cover_description_button {
@@ -157,11 +157,12 @@
 
 .cover_button {
   color: #fff;
-  border: 1px #fff solid;
+  border: 1px currentColor solid;
   background: transparent;
   padding: 12px 32px;
   font-size: 22px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .lots {
@@ -249,12 +250,6 @@
   padding-left: 50px;
 }
 
-.logo_container {
-  display: flex;
-  max-width: 430px;
-  justify-content: center;
-}
-
 .logo_circle {
   display: flex;
   align-items: center;
@@ -263,6 +258,7 @@
   border-radius: 50%;
   width: 240px;
   height: 240px;
+  margin-left: 90px;
 }
 
 .logo_image {
