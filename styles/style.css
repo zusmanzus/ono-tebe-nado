@@ -7,14 +7,14 @@
 
 .header {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding-top: 91px;
   padding-bottom: 91px;
 }
 
 .header_menu {
-  grid-column-start: 1;
+  /* grid-column-start: 1; */
   min-width: max-content;
   padding-left: 50px;
 }
@@ -40,12 +40,12 @@
 
 .header_logo-container {
   justify-self: center;
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .header_logo {
-  width: 148px;
+  max-width: 148px;
 }
 
 .header_image {
@@ -55,8 +55,9 @@
 .contacts {
   list-style: none;
   font-size: 18px;
-  grid-column-start: 6;
+  grid-column-start: 3;
   grid-column-end: -1;
+  line-height: 1.35;
 }
 
 .header .contacts {
@@ -68,7 +69,7 @@
 }
 
 .cover {
-  padding: 165px 70px 50px 60px;
+  padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -88,10 +89,6 @@
   opacity: 0.6;
   background: #000;
 }
-
-/* .cover .overlay {
-  height: fit-content;
-} */
 
 .cover_title {
   color: #fff;
@@ -128,8 +125,9 @@
 
 .text-right {
   display: flex;
-  justify-content: end;
+  /* justify-content: end; */
   /* margin-right: -30px;*/
+  margin-left: 69%;
 }
 
 .cover_span-bottom-line-start {
@@ -243,11 +241,9 @@
 }
 
 .about {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding: 180px 50px;
   display: grid;
   grid-template-columns: 430px auto;
-  padding-left: 50px;
 }
 
 .logo_circle {
@@ -258,7 +254,7 @@
   border-radius: 50%;
   width: 240px;
   height: 240px;
-  margin-left: 90px;
+  margin-left: 95px;
 }
 
 .logo_image {
@@ -267,8 +263,8 @@
 }
 
 .about_description {
-  margin-top: 100px;
-  padding-left: 20px;
+  margin-top: 105px;
+  padding-left: 25px;
 }
 
 .about_title {
@@ -284,14 +280,18 @@
 }
 
 .footer {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: start; */
   margin-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .footer .contacts {
-  margin-left: 50px;
+  max-width: 240px;;
 }
 
 .footer_links {
@@ -304,7 +304,7 @@
   display: flex;
   list-style: none;
   gap: 50px;
-  margin-right: 50px;
+  justify-content: end;
 }
 
 .footer_social-logo {
