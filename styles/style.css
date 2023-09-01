@@ -3,13 +3,16 @@
   width: 100%;
   max-width: 1440px;
   margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 91px 50px 91px 50px;
+  padding-top: 91px;
+  padding-bottom: 91px;
 }
 
 .header_menu {
@@ -136,8 +139,10 @@
 
 .cover_description_button {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .cover_description {
@@ -161,8 +166,6 @@
 
 .lots {
   padding-top: 180px;
-  padding-left: 50px;
-  padding-right: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -248,7 +251,8 @@
 }
 
 .about {
-  padding: 180px 50px;
+  padding-top: 180px;
+  padding-bottom: 180px;
   display: grid;
   grid-template-columns: 430px auto;
 }
@@ -270,7 +274,7 @@
 }
 
 .about_description {
-  margin-top: 105px;
+  margin-top: 100px;
   padding-left: 25px;
 }
 
@@ -293,12 +297,6 @@
   margin-bottom: 90px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.footer .contacts {
-  /* max-width: 240px;; */
 }
 
 .footer_links {
